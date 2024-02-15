@@ -1,0 +1,86 @@
+@media screen and (min-width: 768px) {
+    .main{
+        width: 576px;
+    }
+    .bottom{
+        width: 576px;
+    }
+    .foll{
+        width: 493px;
+    }
+    #profileInfo{
+        width: 493px;
+    }
+    .middle{
+        width: 576px;
+    }
+    #avatar{
+        width: 117px;
+        height: 117px;
+    }
+    .last{
+        grid-template-columns: auto auto;
+        margin-top: 50px;
+    }
+}
+
+@media (width >1300px) {
+    .main{
+        width: 781px;
+    }
+    .bottom{
+        width: 730px;
+    }
+    .foll{
+        width: 480px;
+        margin-left: 167px;
+    }
+    #profileInfo{
+        width: 480px;
+        font-size: 15px;
+        margin-left: 162px;
+        text-align: initial;
+    }
+    .middle{
+        width: 730px;
+        justify-content: space-between;
+        padding-inline: 30px;
+    }
+    #avatar{
+        width: 117px;
+        height: 117px;
+    }
+    .last{
+        grid-template-columns: auto auto;
+        margin-left: 171px
+    }
+    #userName {
+        font-size: 26px;
+        margin-top: 16px;
+    }
+    #joinDate{
+        margin-left: 361px;
+        margin-top: -48px;
+        font-size: 15px;
+    }
+    .repost>p{
+        font-size: 13px;
+    }
+    #totalRepost{
+        font-size: 21px;
+    }
+    .followers>p{
+        font-size: 13px;
+    }
+    #totalFollowers{
+        font-size: 21px;
+    }
+    .followings>p{
+        font-size: 13px;
+    }
+    #totalFollowings {
+        font-size: 21px;
+    }
+    
+
+}
