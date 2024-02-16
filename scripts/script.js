@@ -31,10 +31,8 @@ search.addEventListener("keypress", (event) => {
   }
 });
 
-// const toggle = document.getElementById("darkmode");
-// const sun = document.getElementById("sun");
-// const bottom = document.getElementById("bottom");
+const definder = document.getElementById("definder");
 
-// toggle.addEventListener("click", () => {
-//   document.body.classList.toggle("dark-mode")
-// });
+definder.addEventListener("click", () => {
+  location.reload()
+})
