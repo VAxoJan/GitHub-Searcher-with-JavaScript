@@ -31,9 +31,10 @@ search.addEventListener("keypress", (event) => {
   }
 });
 
-const toggle = document.getElementById("darkmode");
+// const toggle = document.getElementById("darkmode");
+// const sun = document.getElementById("sun");
+// const bottom = document.getElementById("bottom");
 
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  
-});
+// toggle.addEventListener("click", () => {
+//   document.body.classList.toggle("dark-mode")
+// });
