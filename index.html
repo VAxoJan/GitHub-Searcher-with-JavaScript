@@ -1,72 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mobileStyles/mobileStyle.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script src="./scripts/script.js" type="module" defer ></script>
-    <script src="./scripts/styles.js" type="module" defer ></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mobileStyles/mobileStyle.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="./scripts/script.js" type="module" defer></script>
+    <script src="./scripts/styles.js" type="module" defer></script>
     <title>GitHub Definder</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <header>
-            <p id="definder">devfinder</p>
-            <div class="rigth">
-                <p>dark</p>
-                <img id="darkmode" src="./mobileImages/moon.svg" alt="">
-                <img style="display: none; cursor: pointer;" id="sun" src="./mobileImages/sun.svg" alt="">
-            </div>
-        </header>
-        <div class="middle">
-            <img src="./mobileImages/Shape 2.svg" alt="">
-            <input id="search" type="search" placeholder="Search GitHub Username...">
-            <button id="searchButton">Search</button>
+      <header>
+        <p id="definder">devfinder</p>
+        <div class="rigth">
+          <p>dark</p>
+          <img id="darkmode" src="./mobileImages/moon.svg" alt="" />
+          <img
+            style="display: none; cursor: pointer"
+            id="sun"
+            src="./mobileImages/sun.svg"
+            alt=""
+          />
         </div>
-        <div class="bottom">
-            <div class="avatarHead">
-                <img id="avatar" src="./mobileImages/Oval.svg" alt="" style="margin-top: 30px;">
-                <div class="avatar-rigth" style="margin-top: 30px;">
-                    <h1 id="userName">The Octocat</h1>
-                    <p id="dzagluka">@Octocat</p>
-                    <p id="joinDate">Joined 25 Jan 2011</p>
-                </div>
-            </div>
-            <p id="profileInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloribus.</p>
-            <div class="foll">
-                <div class="repost">
-                    <p>Repost</p>
-                    <h5 id="totalRepost">8</h5>
-                </div>
-                <div class="followers">
-                    <p>Followers</p>
-                    <h5 id="totalFollowers">3938</h5>
-                </div>
-                <div class="followings">
-                    <p>Following</p>
-                    <h5 id="totalFollowings">9</h5>
-                </div>
-            </div>
-            <div class="last">
-                <div class="adress1">
-                    <img src="./mobileImages/1.svg" alt="">
-                    <a style="text-decoration: none;" href="San Francisco" id="location">San Francisco</a>
-                </div>
-                <div class="adress2">
-                    <img src="./mobileImages/2.svg" alt="">
-                    <a href="https://github.blog" id="GitHubLink" style="text-decoration: none;">https://github.blog</a>
-                </div>
-                <div class="adress3">
-                    <img src="./mobileImages/3.svg" alt="">
-                    <p id="tvitter">Not available</p>
-                </div>
-                <div class="adress4">
-                    <img src="./mobileImages/4.svg" alt="">
-                    <p id="agithub">@github</p>
-                </div>
-            </div>
+      </header>
+      <div class="middle">
+        <img src="./mobileImages/Shape 2.svg" alt="" />
+        <input
+          id="search"
+          type="search"
+          placeholder="Search GitHub Username..."
+        />
+        <button id="searchButton">Search</button>
+      </div>
+      <div class="bottom">
+        <div class="avatarHead">
+          <img
+            id="avatar"
+            src="./mobileImages/Oval.svg"
+            alt=""
+            style="margin-top: 30px"
+          />
+          <div class="avatar-rigth" style="margin-top: 30px">
+            <h1 id="userName">The Octocat</h1>
+            <p id="dzagluka">@Octocat</p>
+            <p id="joinDate">Joined 25 Jan 2011</p>
+          </div>
         </div>
+        <p id="profileInfo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+          doloribus.
+        </p>
+        <div class="foll">
+          <div class="repost">
+            <p>Repost</p>
+            <h5 id="totalRepost">8</h5>
+          </div>
+          <div class="followers">
+            <p>Followers</p>
+            <h5 id="totalFollowers">3938</h5>
+          </div>
+          <div class="followings">
+            <p>Following</p>
+            <h5 id="totalFollowings">9</h5>
+          </div>
+        </div>
+        <div class="last">
+          <div class="adress1">
+            <img src="./mobileImages/1.svg" alt="" />
+            <a style="text-decoration: none" href="San Francisco" id="location"
+              >San Francisco</a
+            >
+          </div>
+          <div class="adress2">
+            <img src="./mobileImages/2.svg" alt="" />
+            <a
+              href="https://github.blog"
+              id="GitHubLink"
+              style="text-decoration: none"
+              >https://github.blog</a
+            >
+          </div>
+          <div class="adress3">
+            <img src="./mobileImages/3.svg" alt="" />
+            <p id="tvitter">Not available</p>
+          </div>
+          <div class="adress4">
+            <img src="./mobileImages/4.svg" alt="" />
+            <p id="agithub">@github</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

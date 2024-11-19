@@ -1,268 +1,335 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Roboto&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins&family=Roboto&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #F6F8FF;
-    color: black;
+  background: #f6f8ff;
+  color: black;
 }
 
-.dark-mode{
-    background-color: black;
-    color: white;
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+body.dark-mode #definder {
+  color: #ffffff;
+}
+body.dark-mode .bottom {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .middle {
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .foll {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+body.dark-mode .main {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+body.dark-mode .foll p,
+body.dark-mode .foll h5,
+body.dark-mode .repost,
+body.dark-mode .followers,
+body.dark-mode .followings {
+  color: #cccccc;
+}
+
+body.dark-mode #totalRepost,
+body.dark-mode #totalFollowers,
+body.dark-mode #totalFollowings {
+  color: #ffffff;
+}
+
+body.dark-mode #userName,
+body.dark-mode #dzagluka,
+body.dark-mode #joinDate,
+body.dark-mode #profileInfo,
+body.dark-mode .foll p,
+body.dark-mode .foll h5,
+body.dark-mode .last a,
+body.dark-mode .last p {
+  color: #ffffff;
+}
+
+body.dark-mode #search {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  color: #ffffff;
+}
+
+body.dark-mode #modeText {
+  color: #ffffff;
 }
 
 .main {
-    width: 350px;
-    height: 693px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 350px;
+  height: 693px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header {
-    width: 93%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px auto;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
 }
 
 #definder {
-    color: #222731;
-    font-family: "Space Mono";
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: #222731;
+  font-family: "Space Mono";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .rigth {
-    gap: 16px;
-    display: flex;
+  gap: 16px;
+  display: flex;
 }
 
-.rigth>p {
-    color: #4B6A9B;
-    text-align: right;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.5px;
+.rigth > p {
+  color: #4b6a9b;
+  text-align: right;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
 }
 
 #darkmode {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .middle {
-    width: 93%;
-    margin: 0 auto;
-    height: 60px;
-    border-radius: 15px;
-    background: rgba(254, 254, 254, 1);
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-    display: flex;
-    justify-content: space-evenly;
-    padding-inline: 3px;
+  width: 93%;
+  margin: 0 auto;
+  height: 60px;
+  border-radius: 15px;
+  background: rgba(254, 254, 254, 1);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline: 3px;
 }
 
-.middle>img {
-    width: 20px;
-    height: 20px;
-    margin: auto 0;
+.middle > img {
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
 }
 
 #search {
-    width: 200px;
-    outline: none;
-    border: none;
-    color: #4B6A9B;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
+  width: 200px;
+  outline: none;
+  border: none;
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 #searchButton {
-    width: 84px;
-    height: 46px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #0079FF;
-    border: none;
-    cursor: pointer;
-    color: #FFF;
-    text-align: center;
-    justify-content: center;
-    font-family: "Space Mono";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: auto 0;
+  width: 84px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #0079ff;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  font-family: "Space Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: auto 0;
 }
 
 .bottom {
-    width: 327px;
-    height: 517px;
-    flex-shrink: 0;
-    margin: 16px auto;
-    border-radius: 15px;
-    background: rgba(254, 254, 254, 1);
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+  width: 327px;
+  height: 480px;
+  flex-shrink: 0;
+  margin: 16px auto;
+  border-radius: 15px;
+  background: rgba(254, 254, 254, 1);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
 }
 
 .avatarHead {
-    margin: 32px auto;
-    display: flex;
-    justify-content: space-evenly;
+  margin: 32px auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #userName {
-    color: #2B3442;
-    font-family: "Space Mono";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: #2b3442;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 #dzagluka {
-    color: #0079FF;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #0079ff;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #joinDate {
-    color: #697C9A;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #697c9a;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #profileInfo {
-    color: #4B6A9B;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    width: 327px;
-    margin: 0 auto;
-    padding-inline: 10px;
-    text-align: center;
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  width: 327px;
+  margin: 0 auto;
+  padding-inline: 10px;
+  text-align: center;
 }
 
 .foll {
-    width: 279px;
-    height: 85px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #F6F8FF;
-    margin: 23px auto;
+  width: 279px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f6f8ff;
+  margin: 23px auto;
 }
 
 .foll {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    align-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  align-content: center;
 }
 
 .repost,
 .followers,
-.followings>p {
-    color: #4B6A9B;
-    text-align: center;
-    font-family: "Space Mono";
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.followings > p {
+  color: #ccc;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #totalRepost,
 #totalFollowers,
 #totalFollowings {
-    color: #2B3442;
-    text-align: center;
-    font-family: "Space Mono";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+  color: #2b3442;
+  text-align: center;
+  font-family: "Space Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-.adress1,.adress2,.adress3,.adress4 {
-    display: flex;
-    gap: 20px;
+.adress1,
+.adress2,
+.adress3,
+.adress4 {
+  display: flex;
+  gap: 20px;
 }
 
 .last {
-    width: 84%;
-    margin: 0 auto;
-    display: grid;
-    row-gap: 17px;
-    grid-template-rows: auto auto auto auto;
+  width: 84%;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 17px;
+  grid-template-rows: auto auto auto auto;
 }
 
 #location {
-    color: #4B6A9B;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
-#GitHubLink{
-    color: #4B6A9B;
-    font-family: "Space Mono";
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
+#GitHubLink {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
-#tvitter{
-    color: #4B6A9B;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
+#tvitter {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
-#agithub{
-    color: #4B6A9B;
-    font-family: "Space Mono";
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
+#agithub {
+  color: #4b6a9b;
+  font-family: "Space Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
 
-#avatar{
-    margin-top: 30px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+#avatar {
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
-#definder{
-    cursor: pointer;
+#definder {
+  cursor: pointer;
 }
