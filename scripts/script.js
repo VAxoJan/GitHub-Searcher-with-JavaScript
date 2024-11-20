@@ -6,21 +6,42 @@ const darkIcon = document.getElementById("darkmode");
 const sunIcon = document.getElementById("sun");
 const modeText = document.getElementById("modeText");
 
+document.addEventListener("DOMContentLoaded", () => {
+  const isDarkMode = localStorage.getItem("dark-mode") === "true";
+
+  if (isDarkMode) {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+
 darkIcon.addEventListener("click", toggleDarkMode);
 sunIcon.addEventListener("click", toggleDarkMode);
 
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  const isDarkMode = document.body.classList.toggle("dark-mode");
+  localStorage.setItem("dark-mode", isDarkMode);
 
-  if (document.body.classList.contains("dark-mode")) {
-    darkIcon.style.display = "none";
-    sunIcon.style.display = "inline";
-    modeText.textContent = "light";
+  if (isDarkMode) {
+    enableDarkMode();
   } else {
-    darkIcon.style.display = "inline";
-    sunIcon.style.display = "none";
-    modeText.textContent = "dark";
+    disableDarkMode();
   }
+}
+
+function enableDarkMode() {
+  document.body.classList.add("dark-mode");
+  darkIcon.style.display = "none";
+  sunIcon.style.display = "inline";
+  modeText.textContent = "light";
+}
+
+function disableDarkMode() {
+  document.body.classList.remove("dark-mode");
+  darkIcon.style.display = "inline";
+  sunIcon.style.display = "none";
+  modeText.textContent = "dark";
 }
 
 searchButton.addEventListener("click", () => {
